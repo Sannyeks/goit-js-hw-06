@@ -15,15 +15,16 @@ const createBoxes = amount => {
 		const box = document.createElement('div')
 		box.style.height = `${30 + 10 * i}px`
 		box.style.width = `${30 + 10 * i}px`
-    box.style.background = getRandomHexColor()
-    box.style.margin = '15px'
+        box.style.background = getRandomHexColor()
+        box.style.margin = '15px'
 		elementsToAdd.push(box)
 	}
-	return elementsToAdd
+	return elementsToAdd;
 }
 
 const destroyBoxes = () => {
-	boxes.innerHTML = ''
+	boxes.innerHTML = '';
+	inputNum.value = '';
 }
 
 btnCreate.addEventListener('click', () => {
