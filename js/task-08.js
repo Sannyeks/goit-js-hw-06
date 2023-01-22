@@ -16,5 +16,5 @@ if (email.value === '' || password.value === '') {
 const userForm = { email: email.value, password: password.value}
 
 console.log(userForm);
-event.currentTarget.rest()
+event.currentTarget.reset()
 }
